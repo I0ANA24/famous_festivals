@@ -85,7 +85,7 @@ section {
 
 .title {
     color: var(--medium-purple);
-    line-height: 35px;
+    line-height: 45px;
 }
 
 h1 {
@@ -210,4 +210,33 @@ marquee {
     padding-top: 10px;
     display: flex;
     align-items: center;
+}
+
+@media (max-width: 768px) {
+    .hero {
+        justify-content: center;
+        text-align: center;
+    }
+
+    #cta {
+        margin: 0 auto;
+    }
+
+    .offers, .images {
+        gap: 3vh;
+    }
+
+    .images-container {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    footer {
+        height: 30vh;
+        padding-bottom: 6vh;
+        justify-content: center;
+    }
+
+    footer ul {
+        align-items: center;
+    }
 }
