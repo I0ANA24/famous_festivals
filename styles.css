@@ -232,6 +232,7 @@ marquee {
 
     .images-container {
         grid-template-columns: repeat(3, 1fr);
+        gap: 30px;
     }
 
     footer {
@@ -317,6 +318,7 @@ marquee {
 
     .images-container {
         grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
     }
 
     h1 {

@@ -35,6 +35,34 @@ th {
     font-weight: 600;
 }
 
+.festival-content {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5vw;
+    text-align: justify;
+    text-indent: 50px;
+}
+
+.odd {
+    flex-direction: row-reverse;
+}
+
+.festival-content img {
+    width: 50%;
+}
+
+@media (max-width: 800px) {
+    .festival-content {
+        flex-direction: column;
+    }
+
+    .festival-content img {
+        width: 80%;
+    }
+}
+
 @media (max-width: 500px) {
     table, th, td {
         font-size: 0.75em;
@@ -42,5 +70,9 @@ th {
 
     th {
         font-size: 0.8em;
+    }
+
+    .festival-content p {
+        font-size: 0.75em;
     }
 }
