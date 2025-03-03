@@ -306,8 +306,8 @@ marquee {
     .menu a {
         text-decoration: none;
         color: var(--light-purple);
-        font-size: 1.4em;
-        font-family: 'Roboto Serif';
+        font-size: 1.1em;
+        font-family: 'Poppins';
         font-weight: 600;
     }
 
