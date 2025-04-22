@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Lobster+Two:ital,wght@0,400;0,700;1,400;1,700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root {
+    --page-color: #D2E2FF;
+    --light-purple: #C9B2FF;
+    --medium-purple: #9C72FF;
+    --dark-purple: #58208F;
+    --hero-footer-color: rgba(0, 0, 0, 0.6);
+    --bottom-color: rgba(0, 0, 0, 0.9);
+    --text-color: rgba(0, 0, 0, 0.85);
+}
+
+.hero {
+    height: 30vh;
+    justify-content: center;
+    text-align: center;
+    padding-top: 7vh;
+}
+
+.title {
+    color: var(--light-purple);
+}
+
+.testimonials-container {
+    width: 100%;
+    display: grid;
+    gap: 10px;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.testimonial {
+    border-radius: 20px;
+    padding: 20px;
+    padding-top: 80px;
+    background-color: #cdbafa;
+    box-shadow: 0px 0px 20px 0px #8889e0;
+    position: relative;
+    text-align: justify !important;
+    position: relative;
+    padding-bottom: 100px;
+}
+
+.testimonial > img {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    width: 45px;
+    border: 1px solid rgb(86, 86, 86);
+    border-radius: 50%;
+    padding: 10px;
+}
+
+.testimonial p {
+    color: #222;
+    font-weight: 400;
+    text-align: left;
+}
+
+.testimonial .t-person {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    bottom: 20px;
+    border-top: 1px solid #666;
+    padding-top: 10px;
+    width: calc(100% - 40px);
+}
+
+.testimonial img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+.testimonial .timg {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-y: top;
+}
+
+#timg1 {
+    background-image: url("../assets/recenzii/person1.jpg");
+}
+
+#timg2 {
+    background-image: url("../assets/recenzii/person2.jpg");
+}
+
+#timg3 {
+    background-image: url("../assets/recenzii/person3.jpg");
+}
+
+#timg4 {
+    background-image: url("../assets/recenzii/person4.jpg");
+}
+
+#timg5 {
+    background-image: url("../assets/recenzii/person5.jpg");
+}
+
+#timg6 {
+    background-image: url("../assets/recenzii/person6.jpg");
+}
+
+.testimonial .t-info {
+    width: calc(100% - 60px);
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: center;
+}
+
+.testimonial .name {
+    font-size: 1em;
+    font-weight: 500;
+    line-height: 20px;
+}
+
+.testimonial .username {
+    font-size: 0.9em;
+    font-weight: 400;
+}
+
+@media (max-width: 1000px) {
+    .testimonials-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 700px) {
+    .testimonials-container {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .testimonial {
+        padding-top: 70px;
+    }
+
+    .testimonial > img {
+        width: 40px;
+        height: auto;
+    }
+}

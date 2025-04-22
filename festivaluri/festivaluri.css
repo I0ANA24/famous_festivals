@@ -42,6 +42,7 @@ th {
     align-items: center;
     gap: 5vw;
     text-align: justify;
+    text-indent: 50px;
 }
 
 .odd {
