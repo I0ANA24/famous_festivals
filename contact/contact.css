@@ -142,7 +142,7 @@ textarea {
 
     .info-section {
         border-left: none;
-        border-top: 2px dashed var(--light-purple);
+        border-top: 2px dashed var(--dark-purple);
         padding-left: 0;
         padding-top: 2rem;
     }

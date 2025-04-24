@@ -3,7 +3,6 @@ let close = document.getElementById('menu-icon-close');
 let menu = document.querySelector('.menu');
 
 hamburger.addEventListener('click', () => {
-    console.log("merge");
     hamburger.style.display = "none";
     close.style.display = "block";
     menu.style.display = "flex";
