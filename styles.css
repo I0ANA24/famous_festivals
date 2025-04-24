@@ -175,7 +175,7 @@ h3 {
 }
 
 footer {
-    height: 40vh;
+    min-height: 40vh;
     width: 100%;
     background: linear-gradient(var(--hero-footer-color), var(--hero-footer-color)), url("./assets/index/hero.jpg");
     background-size: cover;
@@ -192,6 +192,7 @@ footer ul {
     justify-content: center;
     align-items: baseline;
     gap: 10px;
+    margin: 25px 0;
 
 }
 
@@ -235,7 +236,7 @@ marquee {
     }
 
     footer {
-        height: 30vh;
+        min-height: 30vh;
         padding-bottom: 6vh;
         justify-content: center;
     }
@@ -245,7 +246,7 @@ marquee {
     }
 }
 
-@media (max-width: 500px) {
+@media (max-width: 800px) {
     header {
         display: none;
     }

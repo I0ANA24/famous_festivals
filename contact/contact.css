@@ -102,8 +102,9 @@ textarea {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    border-left: 2px dashed var(--light-purple);
+    border-left: 2px dashed var(--dark-purple);
     padding-left: 2rem;
+    font-size: 14px;
 }
 
 .info-section img {
@@ -114,7 +115,7 @@ textarea {
 
 .info-section p {
     color: var(--text-color);
-    margin: 0.3rem 0;
+    margin: 0;
 }
 
 .info-section a {
