@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="stylesheet" href="./contact.css">
+
+    <!-- pentru formularul de contact -->
+    <script type="text/javascript"
+    src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+    </script>
+    <script type="text/javascript">
+        (function(){
+            emailjs.init({
+                publicKey: "fgbe2sPsMLsihr2tq",
+            });
+        })();
+    </script>
+    <script src="../script.js"></script>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <a href="../index.html"><img src="../assets/index/logo.svg" alt=""></a>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="../index.html">Pagina Principală</a></li>
+                <li><a href="../festivaluri/festivaluri.html">Festivaluri</a></li>
+                <li><a href="../harta/harta.html">Hartă</a></li>
+                <li><a href="../recenzii/recenzii.html">Recenzii</a></li>
+                <li><a href="./contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="mobile-menu">
+        <div id="mobile-header"></div>
+        <img src="../assets/index/hamburger.svg" alt="open menu" id="menu-icon">
+        <img src="../assets/index/logo.svg" alt="logo_img" id="mobile-logo">
+        <img src="../assets/index/close.svg" alt="close menu" id="menu-icon-close">
+        <div class="menu">
+            <a href="../index.html">Pagina Principală</a>
+            <a href="../festivaluri/festivaluri.html">Festivaluri</a>
+            <a href="../harta/harta.html">Hartă</a>
+            <a href="../recenzii/recenzii.html">Recenzii</a>
+            <a href="./contact.html">Contact</a>
+        </div>
+    </div>
+    <section class="hero">
+        <div class="content">
+            <div class="title">
+                <h1>Contact</h1>
+            </div>
+        </div>
+    </section>
+    <section class="offers">
+        <h2 class="section-title">
+            Ai fost la vreun festival? <br> Povestește-ne!
+        </h2>
+        <div class="contact-container">
+            <div class="form-section">
+              <h2>Contactează-ne!</h2>
+              <p id="offers-text">
+                Ne bucurăm de fiecare mesaj din partea iubitorilor de muzică, artă și distracție.
+              </p>
+              <form action="">
+                  <input type="text" id="nume" name="nume" placeholder="Nume" required />
+                  <input type="email" id="email" name="email" placeholder="Email" required />
+                  <input type="text" id="subiect" name="subiect" placeholder="Subiect" required>
+                  <textarea rows="5" id="mesaj" name="mesaj" placeholder="Scrie aici..." required></textarea>
+                  <button type="submit" onclick="trimiteEmail()">Trimite mesajul</button>
+              </form>
+            </div>
+            <div class="info-section">
+              <img src="../assets/contact/contact-image.jpg" alt="Contact Image" />
+              <p>151 New Park Ave, Hartford, CT 06106, United States</p>
+              <p>+1 (203) 302-9545</p>
+              <p><a href="mailto:frantioana507@gmail.com">frantioana507@gmail.com</a></p>
+              <div class="socials">
+                <a href="#">🌐</a>
+                <a href="#">🐦</a>
+                <a href="#">📸</a>
+              </div>
+            </div>
+          </div>
+    </section>
+    
+    <footer>
+        <ul>
+            <li><a href="../index.html">Pagina Principală</a></li>
+            <li><a href="../festivaluri/festivaluri.html">Festivaluri</a></li>
+            <li><a href="../harta/harta.html">Hartă</a></li>
+            <li><a href="../recenzii/recenzii.html">Recenzii</a></li>
+            <li><a href="./contact.html">Contact</a></li>
+        </ul>
+        <div class="bottom-footer">
+            <marquee behavior="scroll" direction="right" scrollamount="12">
+                <img src="../assets/index/footer-marquee.svg" alt="">
+            </marquee>
+        </div>
+    </footer>
+
+    <script src="../script.js"></script>
+</body>
+</html>
